@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Form</title>
+</head>
+<body>
+    <h1>Enter the details to make a prediction</h1>
+    <form method="POST">
+        LIMIT_BAL: <input type="text" name="LIMIT_BAL"><br>
+        SEX: <input type="text" name="SEX"><br>
+        EDUCATION: <input type="text" name="EDUCATION"><br>
+        MARRIAGE: <input type="text" name="MARRIAGE"><br>
+        AGE: <input type="text" name="AGE"><br>
+        PAY_0: <input type="text" name="PAY_0"><br>
+        PAY_2: <input type="text" name="PAY_2"><br>
+        PAY_3: <input type="text" name="PAY_3"><br>
+        PAY_4: <input type="text" name="PAY_4"><br>
+        PAY_5: <input type="text" name="PAY_5"><br>
+        PAY_6: <input type="text" name="PAY_6"><br>
+        BILL_AMT1: <input type="text" name="BILL_AMT1"><br>
+        BILL_AMT2: <input type="text" name="BILL_AMT2"><br>
+        BILL_AMT3: <input type="text" name="BILL_AMT3"><br>
+        BILL_AMT4: <input type="text" name="BILL_AMT4"><br>
+        BILL_AMT5: <input type="text" name="BILL_AMT5"><br>
+        BILL_AMT6: <input type="text" name="BILL_AMT6"><br>
+        PAY_AMT1: <input type="text" name="PAY_AMT1"><br>
+        PAY_AMT2: <input type="text" name="PAY_AMT2"><br>
+        PAY_AMT3: <input type="text" name="PAY_AMT3"><br>
+        PAY_AMT4: <input type="text" name="PAY_AMT4"><br>
+        PAY_AMT5: <input type="text" name="PAY_AMT5"><br>
+        PAY_AMT6: <input type="text" name="PAY_AMT6"><br>
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if final_result is not none %}
+        <h2>Prediction Result: {{ final_result }}</h2>
+    {% endif %}
+</body>
+</html>
